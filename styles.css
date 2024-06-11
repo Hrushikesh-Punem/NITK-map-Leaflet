@@ -11,6 +11,14 @@ main{
     display: flex;
 }
 
+#controls {
+    margin: 10px;
+}
+#controls select, #controls button {
+    margin: 5px;
+    padding: 5px;
+}
+
 .dept-list{
     width: 25%;
     height: 100vh;
@@ -19,8 +27,26 @@ main{
 }
 
 #map{
-    height :100vh;
-    width: 75%;
+    height :93vh;
+    width: 100%;
+}
+label, button{
+    text-decoration: none;
+    font-size: 20ox;
+    color: #ff6900;
+    font-weight: 700;
+}
+#source{
+    font-size: 14px;
+    color:#404040;
+}
+#destination{
+    font-size: 14px;
+    color:#404040;
+}
+#controls{
+    justify-content: center;
+    align-items: center;
 }
 
 .dept-list .heading{
