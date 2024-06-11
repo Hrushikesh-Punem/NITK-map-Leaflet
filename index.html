@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Practice</title>
+    <title>NITK Campus Map</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+    
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
      crossorigin=""/>
-     <link rel="stylesheet" href="./styles.css">
+     
+    <!-- Leaflet Routing Machine CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <main>
@@ -23,8 +28,105 @@
     
             </ul>
         </div>
+        <div style="height :100vh;  width: 100%; background-color: whitesmoke;">
+        <div id="controls">
+            <label for="source">Source: </label>
+            <select id="source">
+                <option value="13.014246932489755, 74.7885676920037">NITK Beach Gate</option>
+                <option value="13.015148961785732, 74.7890692979664">CPWD Office</option>
+                <option value="13.01382139954483, 74.79193389715611">Vikram Sarabhai Guest House</option>
+                <option value="13.012744709986611, 74.79137599768846">Computer Science and Engineering</option>
+                <option value="13.011762096017637, 74.79311406910693">NITK Bus Stop</option>
+                <option value="13.012124525338482, 74.79218541601098">Deepak Restaurant(NITK Canteen)</option>
+                <option value="13.01158559151246, 74.79217739954088">Electronics & Communication Department NITK</option>
+                <option value="13.010947484674064, 74.79238272554652">Department of Information Technology, NITK</option>
+                <option value="13.010452594194774, 74.79238359196648">LHC</option>
+                <option value="13.00984603791965, 74.79234860096597">LHC Parking lot</option>
+                <option value="13.011927887506307, 74.79404554012125">Department of Mining Engineering</option>
+                <option value="13.012284644810316, 74.79393212793052">Department of Civil Engineering NITK</option>
+                <option value="13.012018912317577, 74.79428538940785">Department of water Resources and Engineering</option>
+                <option value="13.011573535145072, 74.79485950409577">Fluid Mechanics Lab</option>
+                <option value="13.011088033312602, 74.7946606230838">Pavillion</option>
+                <option value="13.010935523926488, 74.79429663827234">NITK Main Building</option>
+                <option value="13.009946255859502, 74.79412310954649">Reading Room</option>
+                <option value="13.010014396833402, 74.79486181044948">NITK Central Library</option>
+                <option value="13.009609209044385, 74.79457758510848">Department of Mathematical & Computational Sciences NITK</option>
+                <option value="13.009602537630947, 74.79394341310237">Additional Teaching Block</option>
+                <option value="13.008992207052026, 74.79418033541725">SBI ATM</option>
+                <option value="13.008756118892718, 74.79415520729259">Hair Cutting Saloon</option>
+                <option value="13.008670427576188, 74.79416059189057">Canara Bank</option>
+                <option value="13.008555006576627, 74.79415700215849">Mudrika Prints</option>
+                <option value="13.008304927550954, 74.7940834126504">Shiwalik Boys Hostel</option>
+                <option value="13.007337836372878, 74.79380161868134">Tripthi night canteen block 8</option>
+                <option value="13.007154046654474, 74.79471643969859">Gymnasium</option>
+                <option value="13.006926895009359, 74.79528829695782">Mega Hostel tower2</option>
+                <option value="13.006867270917315, 74.79578440673812">NITK power house</option>
+                <option value="13.007548688324198, 74.7953014099958">Mega mess</option>
+                <option value="13.005482617638341, 74.79470634908252">Nilgiri Hostel</option>
+                <option value="13.006034294001388, 74.7956174219356">Block 4 satpura</option>
+                <option value="13.006476304629343, 74.79650851771996">Block 3 Vindhya</option>
+                <option value="13.007211934869579, 74.7971792698324">Block 2 Aravalli</option>
+                <option value="13.008064379197048, 74.7973445275977">Block 1 Karavalli</option>
+                <option value="13.007876619320358, 74.79626853648173">Hostel office</option>
+                <option value="13.008795563643117, 74.79706681565384">Brahmagiri hostel</option>
+                <option value="13.008527202650855, 74.79830138836691">Pushpagiri hostel</option>
+                <option value="13.009133382361563, 74.79657428271943">Lal chowk</option>
+                <option value="13.00950908675576, 74.79627617066704">HCC</option>
+                <option value="13.010757015529602, 74.79574872499687">Students Activity center</option>
+                <option value="13.011168354725626, 74.7962734880142">Department of Chemical Engineering</option>
+                <option value="13.01099920597997, 74.79493987974463">Metallurgy and material Department</option>
+            </select>
+            <label for="destination">Destination: </label>
+            <select id="destination">
+                <option value="13.014246932489755, 74.7885676920037">NITK Beach Gate</option>
+                <option value="13.015148961785732, 74.7890692979664">CPWD Office</option>
+                <option value="13.01382139954483, 74.79193389715611">Vikram Sarabhai Guest House</option>
+                <option value="13.012744709986611, 74.79137599768846">Computer Science and Engineering</option>
+                <option value="13.011762096017637, 74.79311406910693">NITK Bus Stop</option>
+                <option value="13.012124525338482, 74.79218541601098">Deepak Restaurant(NITK Canteen)</option>
+                <option value="13.01158559151246, 74.79217739954088">Electronics & Communication Department NITK</option>
+                <option value="13.010947484674064, 74.79238272554652">Department of Information Technology, NITK</option>
+                <option value="13.010452594194774, 74.79238359196648">LHC</option>
+                <option value="13.00984603791965, 74.79234860096597">LHC Parking lot</option>
+                <option value="13.011927887506307, 74.79404554012125">Department of Mining Engineering</option>
+                <option value="13.012284644810316, 74.79393212793052">Department of Civil Engineering NITK</option>
+                <option value="13.012018912317577, 74.79428538940785">Department of water Resources and Engineering</option>
+                <option value="13.011573535145072, 74.79485950409577">Fluid Mechanics Lab</option>
+                <option value="13.011088033312602, 74.7946606230838">Pavillion</option>
+                <option value="13.010935523926488, 74.79429663827234">NITK Main Building</option>
+                <option value="13.009946255859502, 74.79412310954649">Reading Room</option>
+                <option value="13.010014396833402, 74.79486181044948">NITK Central Library</option>
+                <option value="13.009609209044385, 74.79457758510848">Department of Mathematical & Computational Sciences NITK</option>
+                <option value="13.009602537630947, 74.79394341310237">Additional Teaching Block</option>
+                <option value="13.008992207052026, 74.79418033541725">SBI ATM</option>
+                <option value="13.008756118892718, 74.79415520729259">Hair Cutting Saloon</option>
+                <option value="13.008670427576188, 74.79416059189057">Canara Bank</option>
+                <option value="13.008555006576627, 74.79415700215849">Mudrika Prints</option>
+                <option value="13.008304927550954, 74.7940834126504">Shiwalik Boys Hostel</option>
+                <option value="13.007337836372878, 74.79380161868134">Tripthi night canteen block 8</option>
+                <option value="13.007154046654474, 74.79471643969859">Gymnasium</option>
+                <option value="13.006926895009359, 74.79528829695782">Mega Hostel tower2</option>
+                <option value="13.006867270917315, 74.79578440673812">NITK power house</option>
+                <option value="13.007548688324198, 74.7953014099958">Mega mess</option>
+                <option value="13.005482617638341, 74.79470634908252">Nilgiri Hostel</option>
+                <option value="13.006034294001388, 74.7956174219356">Block 4 satpura</option>
+                <option value="13.006476304629343, 74.79650851771996">Block 3 Vindhya</option>
+                <option value="13.007211934869579, 74.7971792698324">Block 2 Aravalli</option>
+                <option value="13.008064379197048, 74.7973445275977">Block 1 Karavalli</option>
+                <option value="13.007876619320358, 74.79626853648173">Hostel office</option>
+                <option value="13.008795563643117, 74.79706681565384">Brahmagiri hostel</option>
+                <option value="13.008527202650855, 74.79830138836691">Pushpagiri hostel</option>
+                <option value="13.009133382361563, 74.79657428271943">Lal chowk</option>
+                <option value="13.00950908675576, 74.79627617066704">HCC</option>
+                <option value="13.010757015529602, 74.79574872499687">Students Activity center</option>
+                <option value="13.011168354725626, 74.7962734880142">Department of Chemical Engineering</option>
+                <option value="13.01099920597997, 74.79493987974463">Metallurgy and material Department</option>
+            </select>
+            <button onclick="calculateRoute()">Get Route</button>
+        </div>
         <div id="map">
             right side
+        </div>
         </div>
     </main>
     
@@ -32,6 +134,8 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""></script>
+    <!-- Leaflet Routing Machine JavaScript -->
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
     <script src="./dept.js"></script>
     <script src="./app.js"></script>
 </body>
