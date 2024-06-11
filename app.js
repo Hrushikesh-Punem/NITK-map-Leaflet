@@ -1,8 +1,35 @@
 const myMap = L.map('map').setView([13.0102, 74.7938], 16.5);
 const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 
-const tileLayer = L.tileLayer(tileUrl,{});
+const tileLayer = L.tileLayer(tileUrl,{maxzoom:19,});
 tileLayer.addTo(myMap);
+
+
+
+
+var routingControl;
+
+function calculateRoute() {
+    // Get source and destination values
+    var source = document.getElementById('source').value.split(',');
+    var destination = document.getElementById('destination').value.split(',');
+
+    if (routingControl) {
+        myMap.removeControl(routingControl);
+    }
+
+    routingControl = L.Routing.control({
+        waypoints: [
+            L.latLng(source[0], source[1]),
+            L.latLng(destination[0], destination[1])
+        ],
+        routeWhileDragging: true
+    }).addTo(myMap);
+}
+
+
+
+
 
 
 function generateList() {
@@ -77,3 +104,4 @@ function flyToDept(dept){
         .openOn(myMap);
     }, 3000);
 }
+
