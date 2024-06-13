@@ -9,6 +9,9 @@ tileLayer.addTo(myMap);
 
 var routingControl;
 
+
+
+
 function calculateRoute() {
     // Get source and destination values
     var source = document.getElementById('source').value.split(',');
@@ -23,11 +26,28 @@ function calculateRoute() {
             L.latLng(source[0], source[1]),
             L.latLng(destination[0], destination[1])
         ],
-        routeWhileDragging: true
+        routeWhileDragging: true,
+        showAlternatives: true,
+        lineOptions: {
+            styles: [
+                { color: 'black', opacity: 1, weight: 7 },
+                { color: 'white', opacity: 0.8, weight: 6 },
+                { color: 'blue', opacity: 0.7, weight: 4 }
+            ]
+        },
+        altLineOptions: {
+            styles: [
+                { color: 'black', opacity: 0.7, weight: 7 },
+                { color: 'white', opacity: 0.6, weight: 6 },
+                { color: 'red', opacity: 0.5, weight: 4 }
+            ],
+            
+            missingRouteStyles: [
+                { color: 'gray', opacity: 0.5, weight: 5 }
+            ]
+        }
     }).addTo(myMap);
 }
-
-
 
 
 
@@ -77,19 +97,22 @@ function onEachFeature(feature, layer){
     layer.bindPopup(makePopupContent(feature),{closeButton:false, offset: L.point(0,-10)});
 }
 
-var myIcon = L.icon({
-    iconUrl: 'marker.png',
-    iconSize: [50,50]
-})
+
+//adding markers to the map
+
+// var myIcon = L.icon({
+//     iconUrl: 'marker.png',
+//     iconSize: [50,50]
+// })
 
 
-const deptsLayer = L.geoJSON(deptList,{
-    onEachFeature: onEachFeature,
-    pointToLayer: function(feature,latlng) {
-        return L.marker(latlng,{icon: myIcon});
-    }
-});
-deptsLayer.addTo(myMap);
+// const deptsLayer = L.geoJSON(deptList,{
+//     onEachFeature: onEachFeature,
+//     pointToLayer: function(feature,latlng) {
+//         return L.marker(latlng,{icon: myIcon});
+//     }
+// });
+// deptsLayer.addTo(myMap);
 
 function flyToDept(dept){
     const lat = dept.geometry.coordinates[1];
