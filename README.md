@@ -49,4 +49,4 @@ If you notice any missing routes or places on the map, you can easily update the
    1. Once you've added or edited the information, click on the "Save button".
    2. Add a brief description of your changes in the comment box.
    3. Click "Upload" to submit your changes to OpenStreetMap.
-### Suggested [Walkthrough](https://www.openstreetmap.org/edit?editor=id#map=17/13.01082/74.79428) for OpenStreetMap
+### Suggested [Walkthrough for OpenStreetMap](https://www.openstreetmap.org/edit?editor=id#map=17/13.01082/74.79428) 
