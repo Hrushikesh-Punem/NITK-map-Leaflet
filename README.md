@@ -7,5 +7,5 @@ This project demonstrates how to use Leaflet and Leaflet Routing Machine to disp
 - Drag waypoints to update routes dynamically.
 - Customize route and alternative route styles.
 ## Demo
-<img src="[https://i.imgur.com/yourgif.gif](https://github.com/Hrushikesh-Punem/NITK-map-Leaflet/blob/main/assets/Application%20GIF.gif)" alt="Application GIF" width="500"/>
+![Application GIF](https://github.com/Hrushikesh-Punem/NITK-map-Leaflet/blob/main/assets/Application%20GIF.gif)
 Live Demo : https://hrushikesh-punem.github.io/NITK-map-Leaflet/
