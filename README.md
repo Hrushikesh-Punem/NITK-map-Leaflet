@@ -27,6 +27,8 @@ This project demonstrates how to use Leaflet and Leaflet Routing Machine to disp
 - Configures route styles and displays alternative routes.
 ## Contributing
 If you notice any missing routes or places on the map, you can easily update these using the OpenStreetMap (OSM) iD Editor. Here’s a step-by-step guide to help you get started:
+### Suggested [Walkthrough for OpenStreetMap](https://www.openstreetmap.org/edit?editor=id#map=17/13.01082/74.79428) 
+OR
 1. Create an OpenStreetMap Account
      1. Visit [OpenStreetMap](https://www.openstreetmap.org/)
      2. Click on SignUp and create your account.
@@ -49,4 +51,4 @@ If you notice any missing routes or places on the map, you can easily update the
    1. Once you've added or edited the information, click on the "Save button".
    2. Add a brief description of your changes in the comment box.
    3. Click "Upload" to submit your changes to OpenStreetMap.
-### Suggested [Walkthrough for OpenStreetMap](https://www.openstreetmap.org/edit?editor=id#map=17/13.01082/74.79428) 
+
