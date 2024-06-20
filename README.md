@@ -25,30 +25,52 @@ This project demonstrates how to use Leaflet and Leaflet Routing Machine to disp
 - Adds OpenStreetMap tiles.
 - Defines the 'calculateRoute' function to handle route calculations using the Leaflet Routing Machine.
 - Configures route styles and displays alternative routes.
+
 ## Contributing
 If you notice any missing routes or places on the map, you can easily update these using the OpenStreetMap (OSM) iD Editor. Here’s a step-by-step guide to help you get started:
 ### Suggested [Walkthrough for OpenStreetMap](https://www.openstreetmap.org/edit?editor=id#map=17/13.01082/74.79428) 
-OR
-1. Create an OpenStreetMap Account
-     1. Visit [OpenStreetMap](https://www.openstreetmap.org/)
-     2. Click on SignUp and create your account.
-2. Open the iD Editor
-     1. Navigate to the area on the map where you want to add or edit information.
-     2. click on the "Edit" button at the top of the page and select "Edit with iD".
-4. Add or Edit Map Features
-    - Adding a New Place
-          1. Click on the point tool in the toolbar on the right.
-          2. Click on the map where you want to add the new place.
-          3. Choose the type of place you are adding(eg. restautant, school, park) from the options that appear.
-          4. Fill in the details such as name, address and any other relevant information.
-- Adding a New Route
-          1. Click on the "Line" tool in the toolbar on the right.
-          2. Click on the map to start drawing the route. Click at each point where the route change direction.
-          3. Double click to end the route.
-          4. Choose the type of route you are adding (eg. road, footpath, cycleway) from the options that appear.
-          5. Fill the details such as the name of the route, surface type, and any other relevant information.
-6. Save your changes
-   1. Once you've added or edited the information, click on the "Save button".
-   2. Add a brief description of your changes in the comment box.
-   3. Click "Upload" to submit your changes to OpenStreetMap.
+Or follow these Steps:
+#### Step 1: Create an OpenStreetMap Account
 
+1. Visit [OpenStreetMap](https://www.openstreetmap.org/).
+2. Click on "Sign Up" in the top right corner.
+3. Fill in the required information and create your account.
+
+#### Step 2: Open the iD Editor
+
+1. Log in to your OpenStreetMap account.
+2. Navigate to the area on the map where you want to add or edit information.
+3. Click on the "Edit" button at the top of the page and select "Edit with iD (in-browser editor)".
+
+#### Step 3: Add or Edit Map Features
+
+##### Adding a New Place
+
+1. Click on the "Point" tool in the toolbar on the right.
+2. Click on the map where you want to add the new place.
+3. Choose the type of place you are adding (e.g., restaurant, school, park) from the options that appear.
+4. Fill in the details such as name, address, and any other relevant information.
+
+##### Adding a New Route
+
+1. Click on the "Line" tool in the toolbar on the right.
+2. Click on the map to start drawing the route. Click at each point where the route changes direction.
+3. Double-click to end the route.
+4. Choose the type of route you are adding (e.g., road, footpath, cycleway) from the options that appear.
+5. Fill in the details such as the name of the route, surface type, and any other relevant information.
+
+#### Step 4: Save Your Changes
+
+1. Once you’ve added or edited the information, click on the "Save" button at the top right corner.
+2. Add a brief description of your changes in the comment box.
+3. Click "Upload" to submit your changes to OpenStreetMap.
+
+### Adding a New Location to Department List
+To add a new location to the map displayed in this project, follow these steps:
+1. Edit 'deptList' Array:
+   - Open the 'dept.js' file in your code editor.
+   - Locate the 'deptList' array, which contains GeoJSON objects representing locations.
+   - Open [geojson.io](https://geojson.io/#map=2/0/20) and click on the location you want to add (by 'drawpoint tool' on right)
+   - Copy the geojson object of that location and paste it in the deptList Array. Add the attribute values accordingly. 
+2. Save the File:
+   - Save the 'dept.js' file after adding the new GeoJSON object.
