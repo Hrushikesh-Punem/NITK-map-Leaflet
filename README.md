@@ -8,4 +8,4 @@ This project demonstrates how to use Leaflet and Leaflet Routing Machine to disp
 - Customize route and alternative route styles.
 ## Demo
 ![Application GIF](https://github.com/Hrushikesh-Punem/NITK-map-Leaflet/blob/main/assets/Application%20GIF.gif)
-Live Demo : https://hrushikesh-punem.github.io/NITK-map-Leaflet/
+## Live Demo : https://hrushikesh-punem.github.io/NITK-map-Leaflet/
