@@ -30,6 +30,6 @@ If you notice any missing routes or places on the map, you can easily update the
 1. Create an OpenStreetMap Account
   1. Visit [OpenStreetMap](https://www.openstreetmap.org/)
   2. Click on SignUp and create your account.
-3. Open the iD Editor
-4. Add or Edit Map Features
-5. Save your changes
+2. Open the iD Editor
+3. Add or Edit Map Features
+4. Save your changes
