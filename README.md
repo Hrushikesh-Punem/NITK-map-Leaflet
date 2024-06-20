@@ -36,17 +36,17 @@ OR
      1. Navigate to the area on the map where you want to add or edit information.
      2. click on the "Edit" button at the top of the page and select "Edit with iD".
 4. Add or Edit Map Features
-     Adding a New Place
-     1. Click on the point tool in the toolbar on the right.
-     2. Click on the map where you want to add the new place.
-     3. Choose the type of place you are adding(eg. restautant, school, park) from the options that appear.
-     4. Fill in the details such as name, address and any other relevant information.
-    Adding a New Route
-     1. Click on the "Line" tool in the toolbar on the right.
-     2. Click on the map to start drawing the route. Click at each point where the route change direction.
-     3. Double click to end the route.
-     4. Choose the type of route you are adding (eg. road, footpath, cycleway) from the options that appear.
-     5. Fill the details such as the name of the route, surface type, and any other relevant information.
+    - Adding a New Place
+          1. Click on the point tool in the toolbar on the right.
+          2. Click on the map where you want to add the new place.
+          3. Choose the type of place you are adding(eg. restautant, school, park) from the options that appear.
+          4. Fill in the details such as name, address and any other relevant information.
+- Adding a New Route
+          1. Click on the "Line" tool in the toolbar on the right.
+          2. Click on the map to start drawing the route. Click at each point where the route change direction.
+          3. Double click to end the route.
+          4. Choose the type of route you are adding (eg. road, footpath, cycleway) from the options that appear.
+          5. Fill the details such as the name of the route, surface type, and any other relevant information.
 6. Save your changes
    1. Once you've added or edited the information, click on the "Save button".
    2. Add a brief description of your changes in the comment box.
