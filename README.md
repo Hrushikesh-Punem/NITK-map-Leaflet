@@ -9,3 +9,7 @@ This project demonstrates how to use Leaflet and Leaflet Routing Machine to disp
 ## Demo
 ![Application GIF](https://github.com/Hrushikesh-Punem/NITK-map-Leaflet/blob/main/assets/Application%20GIF.gif)
 ## Live Demo : https://hrushikesh-punem.github.io/NITK-map-Leaflet/
+## Installation
+1. Clone the repository.
+2. Open index.html in your web browser to view the application.
+   
