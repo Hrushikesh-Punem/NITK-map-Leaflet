@@ -25,5 +25,10 @@ This project demonstrates how to use Leaflet and Leaflet Routing Machine to disp
 - Adds OpenStreetMap tiles.
 - Defines the 'calculateRoute' function to handle route calculations using the Leaflet Routing Machine.
 - Configures route styles and displays alternative routes.
-
-   
+## Contributing
+If you notice any missing routes or places on the map, you can easily update these using the OpenStreetMap (OSM) iD Editor. Here’s a step-by-step guide to help you get started:
+1. Create an OpenStreetMap Account
+1. Visit [OpenStreetMap](https://www.openstreetmap.org/)
+3. Open the iD Editor
+4. Add or Edit Map Features
+5. Save your changes
