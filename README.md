@@ -12,4 +12,18 @@ This project demonstrates how to use Leaflet and Leaflet Routing Machine to disp
 ## Installation
 1. Clone the repository.
 2. Open index.html in your web browser to view the application.
+## Code Explanation
+### HTML
+#### The HTML file includes:
+- Links to Leaflet and Leaflet Routing Machine CSS and JS files.
+- A 'div' element to display the map.
+- Input fields for source and destination.
+- A button to trigger the route calculation.
+### JavaScript
+#### The JavaScript code initializes the map and sets up the route calculation:
+- Initializes the map centered on the NITK region.
+- Adds OpenStreetMap tiles.
+- Defines the 'calculateRoute' function to handle route calculations using the Leaflet Routing Machine.
+- Configures route styles and displays alternative routes.
+
    
