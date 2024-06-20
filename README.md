@@ -74,3 +74,9 @@ To add a new location to the map displayed in this project, follow these steps:
    - Copy the geojson object of that location and paste it in the deptList Array. Add the attribute values accordingly. 
 2. Save the File:
    - Save the 'dept.js' file after adding the new GeoJSON object.
+### 'Modifying the Popup Content'
+The makePopupContent function is used to dynamically generate HTML content for popups displayed when interacting with markers on the map. It takes a building object as a parameter, typically representing a GeoJSON feature, and constructs a popup based on its properties.
+#### How to Customize
+1. **Edit HTML Structure**: Modify the HTML template inside the makePopupContent function to change the structure and styling of the popup content.
+2. **Update GeoJSON Properties**: Ensure ${building.properties.name}, ${building.properties.aboutdept}, and ${building.properties['get-directions']} correspond correctly to the properties defined in your GeoJSON data.
+3. **Save Changes**: Save the changes made to the makePopupContent function in your JavaScript file.
