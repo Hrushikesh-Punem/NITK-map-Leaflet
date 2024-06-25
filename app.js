@@ -1,7 +1,7 @@
 const myMap = L.map('map').setView([13.0102, 74.7938], 16.5);
 const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 
-const tileLayer = L.tileLayer(tileUrl,{maxzoom:19,});
+const tileLayer = L.tileLayer(tileUrl,{maxzoom:21,});
 tileLayer.addTo(myMap);
 
 
