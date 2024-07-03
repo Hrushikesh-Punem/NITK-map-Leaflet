@@ -130,4 +130,33 @@ label, button{
     font-size: 14px;
 }
 
-
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1000; /* Ensure it appears above the map */
+}
+* html .ui-autocomplete {
+    height: 200px;
+}
+.autocomplete-container {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+}
+.autocomplete-container input {
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 30px; /* add space for the icon */
+}
+.autocomplete-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+}
+#controls {
+    z-index: 1000; /* Ensure controls appear above the map */
+}
