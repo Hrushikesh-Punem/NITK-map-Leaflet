@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "tunnels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "osm_id": 677939258, "layer": "-1", "highway": "construction", "tunnel": "yes", "oneway": null, "check_date": "2024-03-11", "opening_date": "2024-05-31" }, "geometry": { "type": "LineString", "coordinates": [ [ 74.7930145, 13.009125 ], [ 74.79288, 13.0091237 ], [ 74.7927174, 13.009122 ] ] } },
+{ "type": "Feature", "properties": { "osm_id": 1278060782, "layer": "-1", "highway": "unclassified", "tunnel": "yes", "oneway": "yes", "check_date": null, "opening_date": null }, "geometry": { "type": "LineString", "coordinates": [ [ 74.793116, 13.0138957 ], [ 74.7930559, 13.0138954 ], [ 74.7926829, 13.0138697 ], [ 74.7925816, 13.0138647 ] ] } },
+{ "type": "Feature", "properties": { "osm_id": 1278060785, "layer": "-1", "highway": "unclassified", "tunnel": "yes", "oneway": "yes", "check_date": null, "opening_date": null }, "geometry": { "type": "LineString", "coordinates": [ [ 74.7926061, 13.013932 ], [ 74.7931207, 13.0139651 ] ] } }
+]
+}

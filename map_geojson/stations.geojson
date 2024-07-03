@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "stations",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "osm_id": 3365376156, "highway": "bus_stop", "name": "NITK Guest House Bus Stop" }, "geometry": { "type": "Point", "coordinates": [ 74.7925644, 13.0116682 ] } },
+{ "type": "Feature", "properties": { "osm_id": 4992620404, "highway": "bus_stop", "name": null }, "geometry": { "type": "Point", "coordinates": [ 74.7930071, 13.0126156 ] } }
+]
+}
