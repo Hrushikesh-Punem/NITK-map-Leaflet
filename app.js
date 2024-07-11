@@ -13,11 +13,11 @@ const tileLayer = L.tileLayer(tileUrl,{maxzoom:19,});
 tileLayer.addTo(myMap);
 
 
-fetch('./map.geojson')
-.then(response => response.json())
-.then(data => {
-    L.geoJSON(data).addTo(myMap);
-});
+// fetch('./map.geojson')
+// .then(response => response.json())
+// .then(data => {
+//     L.geoJSON(data).addTo(myMap);
+// });
 
 
 
