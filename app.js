@@ -1,14 +1,14 @@
 const myMap = L.map('map').setView([13.0102, 74.7938], 16.5);
 
 //Using CDN's
-//const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 
 //Using local files
 //const tileUrl = './map.geojson';
 
 //Using server
 //const tileUrl = 'http://10.100.15.184:8000/NITK_map.geojson';
-const tileUrl = 'http://10.100.15.184:8080/tile/{z}/{x}/{y}.png';
+//const tileUrl = 'http://10.100.15.184:8080/tile/{z}/{x}/{y}.png';
 
 
 
